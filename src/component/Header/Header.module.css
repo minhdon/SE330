@@ -1,0 +1,160 @@
+/* Font chữ bạn nên import ở file index.css (ví dụ: Montserrat hoặc Lato) */
+
+.header {
+  position: fixed; /* Ghim lên đầu trang */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0 0 0;
+  color: #fff;
+
+  /* Tạo gradient đen mờ từ trên xuống để chữ dễ đọc trên nền ảnh */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+  font-family: sans-serif; /* Thay bằng font dự án của bạn */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Canh giữa toàn bộ */
+  position: relative;
+}
+
+/* --- Menu Links --- */
+.navGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px; /* Giãn chữ giống thiết kế */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navItem:hover {
+  color: #d4af37; /* Màu vàng kim khi hover */
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+/* --- Logo --- */
+.logoWrapper {
+  margin: 0 60px; /* Khoảng cách từ logo ra 2 bên menu */
+}
+
+/* Tạo hình dáng logo giống trong ảnh (Chữ H trong khung bo tròn) */
+.logoPlaceholder {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #a89f91; /* Màu nâu vàng nhạt */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #fff;
+}
+
+.logoInner {
+  font-size: 32px;
+  font-weight: bold;
+  color: #a89f91;
+}
+.logoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 15%;
+}
+
+/* --- Actions (Lang + Button) --- */
+.actions {
+  position: absolute;
+  right: 0; /* Đẩy hẳn về bên phải màn hình */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.langSelector {
+  background-color: white;
+  color: #333;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.flag {
+  font-size: 16px;
+}
+
+/* Dropdown ngôn ngữ (mặc định ẩn) */
+.langDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 8px 12px;
+  display: none; /* Hiện tại ẩn */
+  color: #333;
+}
+
+.langSelector:hover .langDropdown {
+  display: block;
+}
+
+.bookBtn {
+  background: rgba(0, 0, 0, 0.4); /* Nền tối mờ */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bookBtn:hover {
+  background: #d4af37;
+  border-color: #d4af37;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 1024px) {
+  .navGroup {
+    display: none; /* Ẩn menu chữ trên màn hình nhỏ */
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .logoWrapper {
+    margin: 0;
+  }
+}

@@ -1,0 +1,109 @@
+.card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1); /* Kính mờ */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+
+  /* Hiệu ứng nổi lên khi hover */
+  transition: transform 0.3s ease;
+  animation: float 6s ease-in-out infinite; /* Hiệu ứng bay nhẹ */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.dishImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: drop-shadow(
+    0 10px 15px rgba(0, 0, 0, 0.5)
+  ); /* Bóng đổ cho ảnh món ăn thật hơn */
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #d4af37; /* Màu vàng kim */
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.info {
+  text-align: left;
+}
+
+.dishName {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: serif; /* Font có chân cho sang */
+  color: #fff;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin: 5px 0 15px 0;
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.orderBtn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.orderBtn:hover {
+  background: #d4af37;
+  color: white;
+}
+
+/* Animation bay nhẹ nhàng */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
