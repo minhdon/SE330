@@ -13,6 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Prevent horizontal scrollbar caused by wide elements */
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

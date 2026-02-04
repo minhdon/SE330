@@ -7,7 +7,7 @@
 }
 .hero::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -15,12 +15,13 @@
   background-image: url("public/images/best modern vietnamese restaurants-3.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   filter: blur(3px); /* Độ mờ tại đây */
   z-index: -1; /* Đẩy ra phía sau nội dung */
   /* transform: scale(1.1); */
 }
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

@@ -5,16 +5,16 @@ const dishes = [
   {
     id: 1,
     name: "Phở Bát Đá",
-    description: "Wagyu Beef, Truffle Oil, Handmade Noodle",
-    price: "$24.00",
+    description: "Thịt Bò, Trứng gà, Gia vị thảo mộc",
+    price: "50.000 VND",
     image: "/images/pho.jpg", // Lưu ý: Trong React/Vite, đường dẫn bắt đầu từ thư mục public là dấu /
     tag: "Must Try",
   },
   {
     id: 2,
     name: "Mỳ Quảng Gà",
-    description: "Fresh Spring Rolls, Shrimp, Herbs, Peanut Sauce",
-    price: "$12.00",
+    description: "Gà Thả Vườn, Bánh Tráng, Rau Sống",
+    price: "45.000 VND",
     image: "public/images/myquang.jpg",
     tag: "Best Seller",
   },
@@ -38,22 +38,24 @@ function Hero() {
               <legend className={styles.mainTitle}>Trang chủ</legend>
 
               <h2 className={styles.subTitle}>
-                AUTHENTIC VIETNAMESE RESTAURANT
+                Artiste - Nơi tìm lại hương vị nguyên bản
               </h2>
 
               <div className={styles.quoteWrapper}>
                 <p className={styles.quoteText}>
-                  “Food is symbolic of love when words are inadequate.”
+                  “Khi ngôn từ lùi lại, để mâm cơm kể chuyện tình thân. ”
                 </p>
-                <p className={styles.quoteAuthor}>– Alan D. Wolfelt –</p>
+                {/* <p className={styles.quoteAuthor}>– Alan D. Wolfelt –</p> */}
               </div>
 
               <div className={styles.description}>
                 <p>
-                  Welcome to HOME, where the heart of Vietnam comes alive on
-                  your plate. With each dish meticulously crafted to honor the
-                  rich culinary heritage of Vietnam, HOME takes you on a
-                  gastronomic adventure.
+                  Tại đây, chúng tôi tin rằng mỗi món ăn là một bức tâm thư viết
+                  bằng hương vị. Khi ngôn từ trở nên không đủ để diễn tả lòng
+                  hiếu khách, hãy để những món ngon thuần Việt thay chúng tôi kể
+                  câu chuyện về tình thân và lòng trân quý. Cảm ơn bạn đã lựa
+                  chọn dừng chân để cùng chúng tôi giữ lửa cho những giá trị
+                  truyền thống.
                 </p>
               </div>
             </fieldset>
