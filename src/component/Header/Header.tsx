@@ -24,11 +24,11 @@ function Header() {
       <div className={styles.container}>
         {/* Phần Menu Bên Trái */}
         <nav className={styles.navGroup}>
-          <div className={styles.navItem}>
+          <div
+            className={styles.navItem}
+            onClick={() => (window.location.href = "/")}
+          >
             Trang chủ{" "}
-            <span className={styles.icon}>
-              <ChevronIcon />
-            </span>
           </div>
           {/* <div className={styles.navItem}>
             CONCEPT{" "}
@@ -61,7 +61,12 @@ function Header() {
         {/* Phần Menu Bên Phải */}
         <nav className={styles.navGroup}>
           {/* <div className={styles.navItem}>GALLERY</div> */}
-          <div className={styles.navItem}>Liên hệ</div>
+          <div
+            className={styles.navItem}
+            onClick={() => (window.location.href = "/contact")}
+          >
+            Liên hệ
+          </div>
           <div className={styles.navItem}>Đặt bàn</div>
         </nav>
 

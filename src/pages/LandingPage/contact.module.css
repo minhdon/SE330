@@ -12,6 +12,7 @@
   padding: 20px; /* Tạo khoảng cách với viền fieldset */
   /* background: #dfcfcf; */
   text-align: right;
+  margin-top: 10%;
 }
 
 legend {

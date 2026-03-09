@@ -1,3 +1,4 @@
+import Footer from "../../component/Footer/footer";
 import Header from "../../component/Header/Header";
 import About from "./about";
 import Contact from "./contact";
@@ -12,6 +13,7 @@ function LandingPage() {
       <About />
       <Menu />
       <Contact />
+      <Footer />
     </>
   );
 }
