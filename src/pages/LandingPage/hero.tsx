@@ -1,4 +1,5 @@
-import FeaturedDish from "../../shared/component/FeatureDish/FeatureDish";
+import DishCard from "../../component/food/foodCard/card";
+import HeroBackground from "../../component/layouts/overlay/overlay"; // Nhớ sửa đường dẫn import cho đúng với project của bạn nhé
 import styles from "./hero.module.css";
 
 const dishes = [
@@ -7,34 +8,30 @@ const dishes = [
     name: "Phở Bát Đá",
     description: "Thịt Bò, Trứng gà, Gia vị thảo mộc",
     price: "50.000 VND",
-    image: "/images/pho.jpg", // Lưu ý: Trong React/Vite, đường dẫn bắt đầu từ thư mục public là dấu /
-    tag: "Must Try",
+    image: "/images/pho.jpg",
+    isMustTry: false,
   },
   {
     id: 2,
     name: "Mỳ Quảng Gà",
     description: "Gà Thả Vườn, Bánh Tráng, Rau Sống",
     price: "45.000 VND",
-    image: "public/images/myquang.jpg",
-    tag: "Best Seller",
+    image: "/images/myquang.jpg", // Đã sửa bỏ chữ "public" cho chuẩn Vite
+    isMustTry: true,
   },
 ];
+
 function Hero() {
   return (
     <section className={styles.hero}>
-      {/* Background Image Layer */}
-      <div className={styles.backgroundImage}></div>
-
-      {/* Dark Overlay Layer (Lớp phủ tối để làm nổi chữ) */}
-      <div className={styles.overlay}></div>
+      {/* Gọi component Background vào đây */}
+      <HeroBackground />
 
       {/* Main Content Container */}
       <div className={styles.container}>
-        {/* Thay div thành fieldset */}
         <div className={styles.contentGrid}>
           <div className={styles.leftContent}>
             <fieldset className={styles.borderBox}>
-              {/* Thay h1 thành legend để nó tự động nhảy lên viền */}
               <legend className={styles.mainTitle}>Trang chủ</legend>
 
               <h2 className={styles.subTitle}>
@@ -45,7 +42,6 @@ function Hero() {
                 <p className={styles.quoteText}>
                   “Khi ngôn từ lùi lại, để mâm cơm kể chuyện tình thân. ”
                 </p>
-                {/* <p className={styles.quoteAuthor}>– Alan D. Wolfelt –</p> */}
               </div>
 
               <div className={styles.description}>
@@ -64,13 +60,13 @@ function Hero() {
           <div className={styles.rightContent}>
             <div className={styles.cardGrid}>
               {dishes.map((dish) => (
-                <FeaturedDish
-                  key={dish.id} // Bắt buộc phải có key khi dùng map
+                <DishCard
+                  key={dish.id}
                   name={dish.name}
                   description={dish.description}
                   price={dish.price}
                   image={dish.image}
-                  tag={dish.tag}
+                  isMustTry={dish.isMustTry}
                 />
               ))}
             </div>
@@ -80,4 +76,5 @@ function Hero() {
     </section>
   );
 }
+
 export default Hero;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./menu.module.css";
-
+import { useAppNavigate } from "../../hooks/useAppNavigate";
 // 1. Định nghĩa kiểu dữ liệu cho từng item trong thư viện
 interface LibraryItem {
   id: number;
@@ -50,12 +50,16 @@ const Menu: React.FC = () => {
     setActiveId(id);
   };
 
+  const { goTo } = useAppNavigate();
+
   return (
     <div className={styles.container}>
       {/* Cột bên trái: Title & Button */}
       <div className={styles.sidebar}>
         <h2 className={styles.title}>Thực đơn</h2>
-        <button className={styles.viewBtn}>Xem tất cả</button>
+        <button className={styles.viewBtn} onClick={() => goTo("/menu")}>
+          Xem tất cả
+        </button>
       </div>
 
       {/* Cột bên phải: Slider Gallery */}

@@ -20,7 +20,7 @@ function Footer() {
               <i className="fa-solid fa-phone"></i> (+84) 123 456 789
             </p>
             <p>
-              <i className="fa-solid fa-envelope"></i> artiste@gmail.com
+              <i className="fa-solid fa-envelope"></i> hello@artiste.vn
             </p>
           </div>
           <div className={styles.content}>

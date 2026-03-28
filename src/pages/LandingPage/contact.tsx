@@ -1,4 +1,5 @@
 import styles from "./contact.module.css";
+import { useAppNavigate } from "../../hooks/useAppNavigate";
 const ClockIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +49,7 @@ const MailIcon = () => (
 );
 
 function Contact() {
+  const { goTo } = useAppNavigate();
   return (
     <fieldset className={styles.hero}>
       <legend>Thông tin chi tiết</legend>
@@ -99,7 +101,12 @@ function Contact() {
           </div>
 
           {/* Button */}
-          <button className={styles.reservationBtn}>Đặt bàn ngay</button>
+          <button
+            className={styles.reservationBtn}
+            onClick={() => goTo("/booking")}
+          >
+            Đặt bàn ngay
+          </button>
         </div>
       </section>
     </fieldset>

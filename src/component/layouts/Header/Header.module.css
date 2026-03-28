@@ -1,13 +1,14 @@
 /* Font chữ bạn nên import ở file index.css (ví dụ: Montserrat hoặc Lato) */
 
 .header {
-  position: absolute;
-top:0;
-left:0;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
   z-index: 1000;
   padding: 20px 0 0 0;
   color: #fff;
+  height: 100px;
 
   /* Tạo gradient đen mờ từ trên xuống để chữ dễ đọc trên nền ảnh */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
@@ -42,6 +43,7 @@ left:0;
   cursor: pointer;
   text-transform: uppercase;
   transition: color 0.3s;
+  color: #fff;
 }
 
 .navItem:hover {
@@ -142,6 +144,45 @@ left:0;
 .bookBtn:hover {
   background: #d4af37;
   border-color: #d4af37;
+}
+.btn {
+  position: relative;
+  left: 50px;
+}
+.btn button {
+  margin: 10px;
+}
+.btn .registerBtn {
+  background: #ff6600;
+  color: #fff;
+}
+.btn .loginBtn {
+  background: transparent;
+  color: #ff6600;
+}
+.btn .registerBtn:hover {
+  background: #fff;
+  border: none;
+  color: #ff6600;
+  transition: 0.3s;
+}
+.btn .loginBtn:hover {
+  background: #fff;
+  border: none;
+}
+.line {
+  height: 50px;
+  width: 2px;
+  background: gray;
+
+  margin-left: 50px;
+}
+.bottomLine {
+  position: absolute;
+  width: 80vw;
+  height: 1px;
+  background: #fff;
+  top: 125px;
 }
 
 /* --- Responsive (Mobile) --- */
