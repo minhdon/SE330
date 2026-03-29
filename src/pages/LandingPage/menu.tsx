@@ -16,28 +16,28 @@ const libraryData: LibraryItem[] = [
     category: "Mỳ quảng gà",
     title:
       "Là linh hồn của ẩm thực miền Trung, món ăn này gây ấn tượng bởi sợi mỳ vàng óng, nước dùng đậm đà sền sệt quyện cùng gà và cái giòn tan vui tai của bánh tráng nướng.",
-    image: "public/images/myquang.jpg",
+    image: "images/myquang.jpg",
   },
   {
     id: 2,
     category: "Phở bát đá",
     title:
       'Được mệnh danh là "quốc hồn quốc túy", Phở quyến rũ thực khách bằng làn hương thanh tao từ thảo mộc, những lát thịt bò mềm mại và dòng nước dùng trong veo, ngọt lịm từ xương hầm.',
-    image: "public/images/pho.jpg",
+    image: "images/pho.jpg",
   },
   {
     id: 3,
     category: "Gỏi cuốn",
     title:
       "Món ăn thanh cách này là sự kết hợp tinh tế giữa tôm, thịt, rau sống và bún tươi, tất cả được gói gọn trong lớp bánh tráng mỏng tang, chấm cùng tương đen đậm đà đầy kích thích.",
-    image: "public/images/goicuon.webp",
+    image: "images/goicuon.webp",
   },
   {
     id: 4,
     category: "Bánh xèo",
     title:
       "Với lớp vỏ vàng ươm, giòn rụm bao bọc lấy nhân tôm thịt và giá đỗ bên trong, bánh xèo mang đến một trải nghiệm ẩm thực thú vị khi được cuộn cùng rau rừng và chấm nước mắm chua ngọt.",
-    image: "public/images/banhxeo.jpg",
+    image: "images/banhxeo.jpg",
   },
 ];
 
