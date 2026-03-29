@@ -144,7 +144,7 @@ export const MenuBook: React.FC = () => {
                   <div className={styles.footerContent}>
                     <div className={styles.logoMark}>
                       <img
-                        src="public/images/Brown Simple Circle Restaurant Logo.png"
+                        src="/images/Brown%20Simple%20Circle%20Restaurant%20Logo.png"
                         alt=""
                       />
                     </div>

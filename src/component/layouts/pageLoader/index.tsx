@@ -6,7 +6,7 @@ export default function PageLoader({ isLoading }: { isLoading: boolean }) {
     <div className={styles.loaderOverlay}>
       <div className={styles.loaderContent}>
         <img
-          src="public/images/Brown Simple Circle Restaurant Logo.png"
+          src="images/Brown Simple Circle Restaurant Logo.png"
           alt="Đang tải..."
           className={styles.mascot}
         />

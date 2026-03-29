@@ -13,7 +13,7 @@ function Header() {
             <div className={styles.logoPlaceholder}>
               <div className={styles.logoInner}>
                 <img
-                  src="public/images/Brown Simple Circle Restaurant Logo.png"
+                  src="images/Brown Simple Circle Restaurant Logo.png"
                   alt=""
                   className={styles.logoImage}
                 />

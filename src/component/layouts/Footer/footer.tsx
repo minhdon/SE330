@@ -5,7 +5,7 @@ function Footer() {
     <>
       <section className={styles.container}>
         <section className={styles.leftContent}>
-          <img src="public\images\whitelogo.png" alt="" />
+          <img src="images/whitelogo.png" alt="" />
         </section>
         <section className={styles.rightContent}>
           <div className={styles.content}>

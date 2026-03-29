@@ -62,7 +62,7 @@ export default function ChangePassPage() {
           <div className={styles.logo}>
             {/* Bạn có thể thay bằng thẻ img chứa logo thật */}
             <span className={styles.logoIcon}>
-              <img src="public/images/whitelogo.png" alt="" />
+              <img src="images/whitelogo.png" alt="" />
             </span>{" "}
             Artiste
           </div>
