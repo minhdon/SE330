@@ -17,7 +17,7 @@ export default function ChangePassPage() {
   const [confirmNew, setConfirmNew] = useState("");
 
   const [emailError, setEmailError] = useState<string | null>(null);
-  const [oldError, setOldError] = useState<string | null>(null);
+
   const [newError, setNewError] = useState<string | null>(null);
   const [confirmError, setConfirmError] = useState<string | null>(null);
 
